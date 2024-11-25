@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -53,7 +53,7 @@ body {
     background-color: #ff4f5a; 
 }
 
-/* Cabeçalho */
+
 header {
     background: url('https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fthe-two-towers-vs-return-of-the-king-mordor-v0-b352b0r01tyb1.jpg%3Fwidth%3D3816%26format%3Dpjpg%26auto%3Dwebp%26s%3Dc3f5494c21e1ccfc774b3bb8649fcfc8a2670ea3&rdt=41488') no-repeat center center/cover; 
     text-align: center;
