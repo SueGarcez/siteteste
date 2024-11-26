@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,116 +7,130 @@
 
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
 }
 
 .navbar {
     display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: lightpink;
+    padding: 0 20px;
     position: fixed;
     width: 100%;
-    background-color: lightpink;
+    height: 100px;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
 .logo {
-    flex: 1;
-    text-align: left;
-    font-size: 24px;
-    margin-left: 10%;
     font-family: "Pacifico", sans-serif;
     color: white;
-}
-
-.menu {
-    flex: 3;
-    text-align: right;
-    padding: 20px;
+    font-size: 24px;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
-    padding: 20px 16px;
+    padding: 20px;
+    font-size: 18px;
 }
 
 .menu a:hover {
-    color: white;
-    border-top: 4px solid white;
-    outline: none;
+    border-bottom: 2px solid white;
 }
 
 #botao {
     background-color: violet;
-    padding: 10px 25px;
     color: white;
-    border-radius: 7px;
-    margin-right: 10px;
-    margin-left: 5%;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #botao:hover {
-    border: none;
     background-color: white;
     color: violet;
 }
 
 header {
     display: flex;
-    flex-flow: row wrap;
-    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 120px 20px 40px;
     background-color: pink;
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
 }
 
-
-.linha-cabecalho {
-    flex: 4;
-    margin-left: 10%;
- 
-}
-
-.linha-cabecalho h2 {
-    font-weight: 900;
-    font-size: 20px;
+.linha-cabecalho h1 {
+    color: white;
+    font-size: 48px;
     margin: 0;
-    padding: 0;
-    color: white;
-}
-.linha-cabecalho h1{
-    color: white;
-    font-size: 60px;
 }
 
-.linha-cabecalho p {
-    text-align: left;
-    color: white
+.imgcabecalho img {
+    max-width: 100%;
+    height: auto;
 }
 
-.imgcabecalho {
-    margin-right: 0.3%;
-    flex: 5;
+.info {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 32px;
+    color: blueviolet;
+    font-family: 'Playfair Display', serif;
+}
+
+.sobre {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
     text-align: center;
 }
 
-.botao-contato {
-    background-color: lightpink;
+.card {
+    border: 2px solid lightcoral;
+    border-radius: 10px;
     padding: 20px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.botao-contato:hover {
-    background-color: white;
-    color: lightpink;
+.card:hover {
+    background-color: lightpink;
+}
+
+.card img {
+    width: 30px;
+    height: auto;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+.card:hover .texto-oculto {
+    display: block;
+}
+
+footer {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
 }
