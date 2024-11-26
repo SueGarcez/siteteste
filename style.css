@@ -134,3 +134,15 @@ footer {
     padding: 20px;
     width: 100%;
 }
+.footer-content h2, .footer-hora h2, .footer-mídia h2, .footer-mapa h2{
+    font-size: 20px;
+    color:blueviolet;
+    margin-bottom: 10px;
+}
+.footer-content , .footer-hora , .footer-mídia , .footer-mapa {
+    font-size: 16px;
+}
+.footer-bottom{
+    padding: 10px 0;
+    background-color: lightpink;
+}
